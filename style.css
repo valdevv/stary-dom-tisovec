@@ -150,7 +150,12 @@ p { color: var(--muted); margin: 8px 0 0; }
   display: block;
   object-fit: contain;
 }
-.brand-name { font-weight: 800; font-size: 18px; }
+.brand-name {
+  font-family: 'Playfair Display', 'Manrope', serif;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+}
 .brand-tagline { color: var(--muted); font-size: 12px; }
 
 .nav {
@@ -362,6 +367,21 @@ p { color: var(--muted); margin: 8px 0 0; }
   box-shadow: var(--shadow);
 }
 
+.menu-notes p,
+.menu-notes li,
+.menu-notes strong,
+.menu-notes a {
+  color: var(--text);
+}
+
+.menu-notes a {
+  text-decoration: underline;
+}
+
+.menu-notes p {
+  color: rgba(242, 232, 218, 0.75);
+}
+
 .recommended {
   background: var(--cream);
   border-radius: 6px;
@@ -516,6 +536,28 @@ p { color: var(--muted); margin: 8px 0 0; }
   background: var(--bg-alt);
 }
 
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.footer-social img {
+  width: 26px;
+  height: 26px;
+  filter: brightness(1.4);
+  opacity: 0.85;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.footer-social a:hover img,
+.footer-social a:focus-visible img {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
 @media (min-width: 700px) {
   .marquee-strip img { height: 190px; width: 260px; }
   .nav {
@@ -563,8 +605,8 @@ p { color: var(--muted); margin: 8px 0 0; }
     left: 50%;
     right: auto;
     transform: translateX(-50%);
-    bottom: 18px;
-    font-size: 15px;
+    bottom: 10px;
+    font-size: 14px;
   }
   .scroll-indicator .arrow { font-size: 22px; }
 }

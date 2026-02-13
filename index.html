@@ -46,6 +46,10 @@
           <span>Oslavy</span>
         </div>
       </div>
+      <a class="scroll-indicator" href="#menu" aria-label="Prejdite nižšie pre jedálne menu">
+        <span>Prejdite nižšie pre jedálne menu</span>
+        <span class="arrow">↓</span>
+      </a>
     </section>
 
     <section class="section cards" id="o-nas">
@@ -64,56 +68,71 @@
     <section class="section menu" id="menu">
       <div class="section-header">
         <p class="eyebrow">Jedálny lístok</p>
-        <h2>Demo jedálny lístok – neskôr sa prepíše na reálny.</h2>
-        <p>Krátky výber, ktorý ukazuje štýl našej kuchyne. Čerstvé, sezónne a poctivé.</p>
+        <h2>Jedálny lístok 09.02 – 13.02.2026</h2>
+        <p>Týždenná ponuka obedov. Objednávky do 08:00 na tel. <a href="tel:+421918129820">+421 918 129 820</a>. Výdaj 11:00 – 14:00.</p>
       </div>
 
-      <div class="recommended">
-        <div class="rec-head">
-          <h3>Odporúčame</h3>
-          <p>Tri najobľúbenejšie jedlá podľa hostí.</p>
-        </div>
-        <div class="rec-grid" id="featured-grid"></div>
+      <div class="week-menu">
+        <article class="day-card">
+          <div class="day-title">Pondelok</div>
+          <ul class="dish-list">
+            <li>Šošovicová polievka, chlieb</li>
+            <li>A) Vyprážaný kurací rezeň, zemiaková kaša, kompót</li>
+            <li>B) Pizza so šunkou, kukuricou a syrom</li>
+            <li>C) Grilovaný encián so slivkovým prelivom, zemiakové krokety (CELÁ PORCIA)</li>
+            <li>EXTRA: Vyprážaný syr, varené zemiaky, tatárska omáčka (CELÁ PORCIA)</li>
+          </ul>
+        </article>
+
+        <article class="day-card">
+          <div class="day-title">Utorok</div>
+          <ul class="dish-list">
+            <li>Zemiaková kyslá s vajíčkom, chlieb</li>
+            <li>A) Bravčový steak so zeleninou, cestovina</li>
+            <li>B) Cestoviny Con Pollo so smotanou a syrom</li>
+            <li>C) Pikantný kurací šalát s opečeným ananásom, toast</li>
+            <li>EXTRA: Vyprážaný bravčový rezeň, varené zemiaky, zelenina (CELÁ PORCIA)</li>
+          </ul>
+        </article>
+
+        <article class="day-card">
+          <div class="day-title">Streda</div>
+          <ul class="dish-list">
+            <li>Krémová cesnaková, krutóny</li>
+            <li>A) Maďarský guláš, knedľa</li>
+            <li>B) Slivkové guľky s opečenou strúhankou a maslom</li>
+            <li>C) Vyprážané šampiňóny, varené zemiaky, tatárska omáčka</li>
+            <li>EXTRA: BBQ kuracie krídelká, ryža (CELÁ PORCIA)</li>
+          </ul>
+        </article>
+
+        <article class="day-card">
+          <div class="day-title">Štvrtok</div>
+          <ul class="dish-list">
+            <li>Kapustová sladká s opečenou špekačkou</li>
+            <li>A) Bravčová krkovička s dijonskou horčicou, tarhoňa</li>
+            <li>B) Šišky s lekvárom, posypané s cukrom</li>
+            <li>C) Vyprážané rybie filé, varené zemiaky, mrkvovo-ananásový šalát</li>
+            <li>EXTRA: Bravčová panenka so slivkovo-vínovou omáčkou, ryža (CELÁ PORCIA)</li>
+          </ul>
+        </article>
+
+        <article class="day-card">
+          <div class="day-title">Piatok</div>
+          <ul class="dish-list">
+            <li>Slepačí vývar s gaľgormi</li>
+            <li>A) Detvianska pochúťka v zemiakovej placke, kyslá uhorka</li>
+            <li>B) Krémové cuketové rizoto s parmezánom</li>
+            <li>C) Šopský šalát s balkánskym syrom a olivami, Pizza štangľa</li>
+            <li>EXTRA: Vyprážaný syr, hranolky, tatárska omáčka (CELÁ PORCIA)</li>
+          </ul>
+        </article>
       </div>
 
-      <div class="menu-grid">
-        <div class="menu-card">
-          <h3>Polievky</h3>
-          <ul>
-            <li><span>Slepačí vývar s domácimi rezancami</span><strong>4,50 €</strong></li>
-            <li><span>Krémová tekvicová s praženými jadierkami</span><strong>4,90 €</strong></li>
-          </ul>
-        </div>
-        <div class="menu-card">
-          <h3>Hlavné jedlá</h3>
-          <ul>
-            <li><span>Hovädzí líčok na víne, zemiakové pyré</span><strong>13,90 €</strong></li>
-            <li><span>Kuracie supreme, karfiolové risotto</span><strong>11,90 €</strong></li>
-            <li><span>Pečená kačica, lokše a dusená kapusta</span><strong>14,50 €</strong></li>
-          </ul>
-        </div>
-        <div class="menu-card">
-          <h3>Šaláty</h3>
-          <ul>
-            <li><span>Šalát s kozím syrom, medovo-orechový dresing</span><strong>9,50 €</strong></li>
-            <li><span>Caesar s grilovaným kuracím</span><strong>9,90 €</strong></li>
-          </ul>
-        </div>
-        <div class="menu-card">
-          <h3>Dezerty</h3>
-          <ul>
-            <li><span>Domáca maková štrúdľa s vanilkovou omáčkou</span><strong>4,80 €</strong></li>
-            <li><span>Čokoládové fondant, slaný karamel</span><strong>5,50 €</strong></li>
-          </ul>
-        </div>
-        <div class="menu-card">
-          <h3>Nápoje</h3>
-          <ul>
-            <li><span>Domáca limonáda (citrón / malina)</span><strong>3,20 €</strong></li>
-            <li><span>Filtrovaná káva / Espresso</span><strong>2,50 €</strong></li>
-            <li><span>Víno podľa výberu someliéra (1dcl)</span><strong>3,80 €</strong></li>
-          </ul>
-        </div>
+      <div class="menu-notes">
+        <p><strong>Ceny:</strong> celá porcia 6,00 € (nahlásené do 08:00) / 7,10 € (nenahlásené), polovičná porcia 4,00 € (len vopred nahlásené). Balné: polievka 0,30 €, menu box 0,60 €, taška 0,35 €.</p>
+        <p><strong>Objednávky:</strong> do 08:00 na <a href="tel:+421918129820">+421 918 129 820</a>. Výdaj 11:00 – 14:00.</p>
+        <p><strong>Alergény:</strong> 1. obilniny, 3. vajcia, 7. mlieko, 8. orechy, 9. zeler, 10. horčica, 11. sezam, 12. oxid siričitý atď.</p>
       </div>
     </section>
 

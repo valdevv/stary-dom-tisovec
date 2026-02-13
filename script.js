@@ -18,21 +18,21 @@ const images = {
 
 const featuredDishes = [
   {
-    name: 'Hovädzí guláš',
-    desc: 'Pomaly dusené mäso, domáci chlieb a nakladaná cibuľka.',
-    price: '11,90 €',
-    imageIndex: 0,
-  },
-  {
-    name: 'Kačacie prsia s červenou kapustou',
-    desc: 'Chrumkavá koža, demi-glace a kapustové pyré.',
-    price: '14,90 €',
+    name: 'Detvianska pochúťka',
+    desc: 'V zemiakovej placke, kyslá uhorka.',
+    price: '7,10 €',
     imageIndex: 3,
   },
   {
-    name: 'Čokoládové fondant',
-    desc: 'Horúce srdce, slaný karamel a bobuľové ovocie.',
-    price: '5,90 €',
+    name: 'Maďarský guláš',
+    desc: 'Podávaný s knedľou, sýta klasika.',
+    price: '7,10 €',
+    imageIndex: 0,
+  },
+  {
+    name: 'Vyprážaný syr',
+    desc: 'Hranolky a tatárska omáčka, obľúbená celá porcia.',
+    price: '7,10 €',
     imageIndex: 5,
   },
 ];

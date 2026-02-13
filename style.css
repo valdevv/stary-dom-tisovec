@@ -241,6 +241,35 @@ p { color: var(--muted); margin: 8px 0 0; }
 .hero h1 { color: var(--cream); }
 .hero .lede { font-size: 17px; color: var(--cream); }
 
+.scroll-indicator {
+  position: absolute;
+  bottom: 24px;
+  right: 36px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--cream);
+  opacity: 0.8;
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  z-index: 4;
+}
+
+.scroll-indicator:hover { opacity: 1; }
+
+.scroll-indicator .arrow {
+  font-size: 24px;
+  animation: arrow-bounce 1.6s ease-in-out infinite;
+}
+
+@keyframes arrow-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
+}
+
 .hero .btn.primary {
   background: var(--cream);
   color: var(--text-dark);
@@ -294,6 +323,44 @@ p { color: var(--muted); margin: 8px 0 0; }
 .menu p,
 .menu .eyebrow { color: var(--text-dark); }
 .menu .eyebrow { letter-spacing: 0.2em; }
+
+.week-menu {
+  display: grid;
+  gap: 12px;
+}
+
+.day-card {
+  background: var(--cream);
+  border: 1px solid var(--line-light);
+  border-radius: 8px;
+  padding: 14px 16px;
+  box-shadow: var(--shadow);
+}
+
+.day-title {
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.dish-list {
+  list-style: disc;
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+  color: var(--muted-light);
+}
+
+.menu-notes {
+  margin-top: 16px;
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: var(--text);
+  box-shadow: var(--shadow);
+}
 
 .recommended {
   background: var(--cream);
@@ -473,6 +540,7 @@ p { color: var(--muted); margin: 8px 0 0; }
   }
   .menu-toggle { display: none; }
   .hero { padding: 120px 40px; }
+  .scroll-indicator { bottom: 28px; right: 48px; transform: none; }
   .cards .benefits { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .rec-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .rec-card { grid-template-columns: 1fr; min-height: 250px; }
@@ -488,4 +556,15 @@ p { color: var(--muted); margin: 8px 0 0; }
   .menu-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .gallery-marquee { padding: 14px 0; }
   .marquee-strip img { height: 200px; width: 280px; }
+}
+
+@media (max-width: 768px) {
+  .scroll-indicator {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    bottom: 18px;
+    font-size: 15px;
+  }
+  .scroll-indicator .arrow { font-size: 22px; }
 }

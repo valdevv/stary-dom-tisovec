@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starý dom | Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img class="brand-logo" src="assets/images/logo/logo.jpeg" alt="Starý dom logo" />
+      <div>
+        <div class="brand-name">Starý dom</div>
+        <small class="brand-tagline">reštaurácia</small>
+      </div>
+    </div>
+    <button class="menu-toggle" aria-expanded="false" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" data-nav>
+      <a href="#o-nas">O nás</a>
+      <a href="#menu">Jedálny lístok</a>
+      <a href="#galeria">Galéria</a>
+      <a href="#otvaracie">Otváracie</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Starý dom</p>
+        <h1>Poctivé jedlo. Domáca atmosféra.</h1>
+        <p class="lede">Sezónna kuchyňa, poctivé chute a obsluha, ktorá vás pozná po mene.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="tel:+421918129820">Zavolať</a>
+          <a class="btn ghost" href="https://maps.google.com" target="_blank" rel="noopener">Navigovať</a>
+        </div>
+        <div class="chips">
+          <span>Denné menu</span>
+          <span>Rezervácie</span>
+          <span>Oslavy</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cards" id="o-nas">
+      <div class="section-header">
+        <p class="eyebrow">O nás</p>
+        <h2>Starý dom, kde sa jedlo cíti ako doma</h2>
+        <p>V centre mesta obnovujeme tradíciu poctivej kuchyne. Krátka sezónna karta, domáce recepty, otvorený oheň a ľudia, ktorí veria v pomalé stolovanie.</p>
+      </div>
+      <div class="benefits">
+        <div class="benefit-card">Lokálne suroviny od farmárov</div>
+        <div class="benefit-card">Pece na drevo a domáce dezerty</div>
+        <div class="benefit-card">Rodinná atmosféra a osobná obsluha</div>
+      </div>
+    </section>
+
+    <section class="section menu" id="menu">
+      <div class="section-header">
+        <p class="eyebrow">Jedálny lístok</p>
+        <h2>Demo jedálny lístok – neskôr sa prepíše na reálny.</h2>
+        <p>Krátky výber, ktorý ukazuje štýl našej kuchyne. Čerstvé, sezónne a poctivé.</p>
+      </div>
+
+      <div class="recommended">
+        <div class="rec-head">
+          <h3>Odporúčame</h3>
+          <p>Tri najobľúbenejšie jedlá podľa hostí.</p>
+        </div>
+        <div class="rec-grid" id="featured-grid"></div>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-card">
+          <h3>Polievky</h3>
+          <ul>
+            <li><span>Slepačí vývar s domácimi rezancami</span><strong>4,50 €</strong></li>
+            <li><span>Krémová tekvicová s praženými jadierkami</span><strong>4,90 €</strong></li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <h3>Hlavné jedlá</h3>
+          <ul>
+            <li><span>Hovädzí líčok na víne, zemiakové pyré</span><strong>13,90 €</strong></li>
+            <li><span>Kuracie supreme, karfiolové risotto</span><strong>11,90 €</strong></li>
+            <li><span>Pečená kačica, lokše a dusená kapusta</span><strong>14,50 €</strong></li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <h3>Šaláty</h3>
+          <ul>
+            <li><span>Šalát s kozím syrom, medovo-orechový dresing</span><strong>9,50 €</strong></li>
+            <li><span>Caesar s grilovaným kuracím</span><strong>9,90 €</strong></li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <h3>Dezerty</h3>
+          <ul>
+            <li><span>Domáca maková štrúdľa s vanilkovou omáčkou</span><strong>4,80 €</strong></li>
+            <li><span>Čokoládové fondant, slaný karamel</span><strong>5,50 €</strong></li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <h3>Nápoje</h3>
+          <ul>
+            <li><span>Domáca limonáda (citrón / malina)</span><strong>3,20 €</strong></li>
+            <li><span>Filtrovaná káva / Espresso</span><strong>2,50 €</strong></li>
+            <li><span>Víno podľa výberu someliéra (1dcl)</span><strong>3,80 €</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="galeria">
+      <div class="section-header">
+        <p class="eyebrow">Galéria</p>
+        <h2>Ochutnajte očami</h2>
+        <p>Výber jedál a momentov z nášho starého domu.</p>
+      </div>
+      <div class="gallery-marquee" id="gallery-marquee"></div>
+    </section>
+
+    <section class="section hours" id="otvaracie">
+      <div class="section-header">
+        <p class="eyebrow">Otváracie hodiny</p>
+        <h2>Tešíme sa na vás</h2>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <tbody>
+            <tr><td>Pondelok</td><td>10:30 – 22:00</td></tr>
+            <tr><td>Utorok</td><td>10:30 – 22:00</td></tr>
+            <tr><td>Streda</td><td>10:30 – 22:00</td></tr>
+            <tr><td>Štvrtok</td><td>10:30 – 22:00</td></tr>
+            <tr><td>Piatok</td><td>10:30 – 23:30</td></tr>
+            <tr><td>Sobota</td><td>11:00 – 23:30</td></tr>
+            <tr><td>Nedeľa</td><td>11:00 – 21:00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section contact" id="kontakt">
+      <div class="section-header">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Sme tu pre vás</h2>
+        <p>Adresa: Daxnerova 652, 980 61 Tisovec</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <ul class="contact-list">
+            <li><strong>Telefón:</strong> <a href="tel:+421918129820">+421 918 129 820</a></li>
+            <li><strong>Email:</strong> <a href="mailto:info@starydom.sk">info@starydom.sk</a></li>
+            <li><strong>Adresa:</strong> Daxnerova 652, 980 61 Tisovec</li>
+          </ul>
+          <div class="cta-row">
+            <a class="btn primary" href="tel:+421918129820">Zavolať</a>
+            <a class="btn ghost" href="https://maps.google.com" target="_blank" rel="noopener">Navigovať</a>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <iframe title="Mapa" src="https://maps.google.com/maps?q=Daxnerova%20652%2C%20980%2061%20Tisovec&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© Starý dom – demo web <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
